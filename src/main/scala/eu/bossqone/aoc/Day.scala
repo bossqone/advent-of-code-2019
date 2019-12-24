@@ -48,6 +48,8 @@ abstract class Day(day: Int) extends App {
     Try(function.toString) match {
       case Success(string) =>
         writeOutput(string, subProblem)
+        println()
+        println("solution output:")
         println(string)
         println()
       case Failure(_: NotImplementedError) =>
